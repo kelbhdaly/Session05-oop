@@ -1,4 +1,5 @@
 ﻿using Session05.Interface;
+using Session05.Interface_Ex02;
 using Session05.Interface_Example_01;
 using Type = Session05.Interface.Type;
 
@@ -39,6 +40,19 @@ namespace Session05
             //PrintFiveSeries(typeAObj);
             //TypeB typeBObj = new TypeB();
             //PrintFiveSeries(typeBObj);
+
+
+            #endregion
+
+
+            #region Ex02
+            IMoveOnGround moveOnGround = new Airplane();
+            Airplane airplaneObj= new Airplane();
+            airplaneObj.Backward();
+            moveOnGround.Forward();
+            moveOnGround.Right();
+            moveOnGround.Left();
+
 
 
             #endregion
